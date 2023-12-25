@@ -10,3 +10,7 @@ function timeConvert(num) {
     if(num < 0) {return '00:00'} 
     return (num/60 <= 9) ? (Math.floor((num/60))/100).toFixed(2).split('.')[1] + ':' + ((num % 60)/100).toFixed(2).split('.')[1] : (num/60).toFixed(0) + ':' + ((num % 60)/100).toFixed(2).split('.')[1];
     }
+
+    function timeConvert(num) { 
+        return num > 0 ? `${(Math.floor(num / 60) + "").padStart(2, "0")}:${(num % 60 + "").padStart(2, "0")}` : "00:00";
+      }
