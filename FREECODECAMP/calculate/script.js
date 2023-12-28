@@ -5,4 +5,6 @@ const calculate = () => {
   
   }
 
-  const getMean = (array) => {};
+  const getMean = (array) => {
+    const sum = array.reduce();
+  }
