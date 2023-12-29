@@ -13,7 +13,7 @@ const calculate = () => {
   }
 
   const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
-
+  const getMode = (array) => {};
   const getMedian = (array) => {
     const sorted = array.sort((a, b) => a - b);
     const median =
